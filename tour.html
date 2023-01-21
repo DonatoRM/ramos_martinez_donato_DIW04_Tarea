@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>CarbaTravel - Viajes por todo el mundo</title>
+        <meta charset="utf-8" />
+        <!-- Añadir etiqueta meta para diseño responsive -->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" media="screen" href="./fonts/icomoon/style.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/tour.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="cabecera">
+            <nav class="navegacionPrincipal">
+                <!-- Logo -->
+                <a class="logo" href="">CarbaTravel.</a>
+                <button class="botonSanwich"><span></span> Menu</button>
+
+                <!-- menú horizontal de enlaces -->
+                <div class="menu">
+                    <ul class="menuHorizontal">
+                        <li class="menuHorizontal__opcion"><a class="menuHorizontal__enlace" href="">Home</a></li>
+                        <li class="menuHorizontal__opcion"><a class="menuHorizontal__enlace" href="">Acerca de</a></li>
+                        <li class="menuHorizontal__opcion"><a class="menuHorizontal__enlace" href="">Tours</a></li>
+                        <li class="menuHorizontal__opcion"><a class="menuHorizontal__enlace" href="">Hoteles</a></li>
+                        <li class="menuHorizontal__opcion"><a class="menuHorizontal__enlace" href="">Blog</a></li>
+                        <li class="menuHorizontal__opcion"><a class="menuHorizontal__enlace" href="">Contacto</a></li>
+                        <li class="menuHorizontal__opcion menuHorizontal__opcion--agregar">
+                            <a class="menuHorizontal__enlace" href="">Agregar listado</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Final nav -->
+
+            <div class="zonaTitulo">
+                <h1 class="titulo">Destinos</h1>
+            </div>
+        </header>
+        <!-- zona contenido-->
+        <section>
+            <!-- lateral izquierdo -->
+            <div>
+                <!-- bloque encontrar ciudad -->
+                <div>
+                    <h3>Encontrar ciudad</h3>
+                    <form action="#">
+                        <div class="interiorEncontrarCiudad">
+                            <div>
+                                <input type="text" placeholder="Destino, Ciudad" />
+                            </div>
+                            <div>
+                                <div>
+                                    <div><span></span></div>
+                                    <select name="" id="" placeholder="Búsqueda palabra clave">
+                                        <option value="">Seleccionar Ubicación</option>
+                                        <option value="">San Francisco USA</option>
+                                        <option value="">Berlin Alemania</option>
+                                        <option value="">Lodres Reino Unido</option>
+                                        <option value="">Paris Francia</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="text" id="checkin_date" placeholder="Fecha desde" />
+                            </div>
+                            <div>
+                                <input type="text" id="checkin_date" placeholder="Fecha hasta" />
+                            </div>
+                            <div>
+                                <div>
+                                    <span>
+                                        <input type="number" value="25000" min="0" max="120000" /> -
+                                        <input type="number" value="50000" min="0" max="120000" />
+                                    </span>
+                                    <input value="1000" min="0" max="120000" step="500" type="range" />
+                                    <input value="50000" min="0" max="120000" step="500" type="range" />
+                                </div>
+                            </div>
+                            <div>
+                                <input type="submit" value="Buscar" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- bloque valoración estrellas -->
+                <div>
+                    <h3>Clasificación estrellas</h3>
+                    <form method="post">
+                        <div>
+                            <input type="checkbox" id="exampleCheck1" />
+                            <label for="exampleCheck1">
+                                <p>
+                                    <span><i></i><i></i><i></i><i></i><i></i></span>
+                                </p>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="exampleCheck1" />
+                            <label for="exampleCheck1">
+                                <p>
+                                    <span><i></i><i></i><i></i><i></i><i></i></span>
+                                </p>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="exampleCheck1" />
+                            <label for="exampleCheck1">
+                                <p>
+                                    <span><i></i><i></i><i></i><i></i><i></i></span>
+                                </p>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="exampleCheck1" />
+                            <label for="exampleCheck1">
+                                <p>
+                                    <span><i></i><i></i><i></i><i></i><i></i></span>
+                                </p>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="exampleCheck1" />
+                            <label for="exampleCheck1">
+                                <p>
+                                    <span><i></i><i></i><i></i><i></i><i></i></span>
+                                </p>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Zona destinos con imágenes y descripción -->
+            <div>
+                <!-- Paris -->
+                <div>
+                    <div>
+                        <div>
+                            <h3><a href="#">Paris, Francia</a></h3>
+                            <p>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <span>8 Valoraciones</span>
+                            </p>
+                        </div>
+                        <div>
+                            <span>200€</span>
+                        </div>
+                    </div>
+                    <p>
+                        Muy, muy lejos, detrás de las montañas de la palabra, lejos de los países Vokalia y Consonantia,
+                        viven los textos ciegos.
+                    </p>
+                    <p><span>2 días 3 noches</span></p>
+                    <hr />
+                    <p>
+                        <span><i></i> Paris, FR</span>
+                        <span><a href="#">Descubre</a></span>
+                    </p>
+                </div>
+                <!-- California-->
+                <div>
+                    <div>
+                        <h3><a href="#">California, USA</a></h3>
+                        <p>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <span>8 Valoraciones</span>
+                        </p>
+
+                        <div>
+                            <span>200€</span>
+                        </div>
+                    </div>
+                    <p>
+                        Muy, muy lejos, detrás de las montañas de la palabra, lejos de los países Vokalia y Consonantia,
+                        viven los textos ciegos.
+                    </p>
+                    <p><span>2 días 3 noches</span></p>
+                    <hr />
+                    <p>
+                        <span><i></i> San Franciso, CA</span>
+                        <span><a href="#">Descubre</a></span>
+                    </p>
+                </div>
+                <!-- Londres-->
+                <div>
+                    <div>
+                        <div>
+                            <h3><a href="#">Londres, GB</a></h3>
+                            <p>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <span>8 Valoraciones</span>
+                            </p>
+                        </div>
+                        <div>
+                            <span>200€</span>
+                        </div>
+                    </div>
+                    <p>
+                        Muy, muy lejos, detrás de las montañas de la palabra, lejos de los países Vokalia y Consonantia,
+                        viven los textos ciegos.
+                    </p>
+                    <p><span>2 días 3 noches</span></p>
+                    <hr />
+                    <p>
+                        <span><i></i> Londres, GB</span>
+                        <span><a href="#">Descubre</a></span>
+                    </p>
+                </div>
+                <!-- Singapur-->
+                <div>
+                    <div>
+                        <div>
+                            <h3><a href="#">Singapur, SG</a></h3>
+                            <p>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <span>8 Valoraciones</span>
+                            </p>
+                        </div>
+                        <div>
+                            <span>200€</span>
+                        </div>
+                    </div>
+                    <p>
+                        Muy, muy lejos, detrás de las montañas de la palabra, lejos de los países Vokalia y Consonantia,
+                        viven los textos ciegos.
+                    </p>
+                    <p><span>2 días 3 noches</span></p>
+                    <hr />
+                    <p>
+                        <span><i></i> Singapur, SG</span>
+                        <span><a href="#">Descubre</a></span>
+                    </p>
+                </div>
+                <!-- Signey-->
+                <div>
+                    <div>
+                        <div>
+                            <h3><a href="#">Sidney, Australia</a></h3>
+                            <p>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <span>8 Valoraciones</span>
+                            </p>
+                        </div>
+                        <div>
+                            <span>200€</span>
+                        </div>
+                    </div>
+                    <p>
+                        Muy, muy lejos, detrás de las montañas de la palabra, lejos de los países Vokalia y Consonantia,
+                        viven los textos ciegos.
+                    </p>
+                    <p><span>2 días 3 noches</span></p>
+                    <hr />
+                    <p>
+                        <span><i></i> Sidney, Australia</span>
+                        <span><a href="#">Descubre</a></span>
+                    </p>
+                </div>
+                <!-- Kioto-->
+                <div>
+                    <div>
+                        <div>
+                            <h3><a href="#">Kioto, Japón</a></h3>
+                            <p>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <span>8 Valoraciones</span>
+                            </p>
+                        </div>
+                        <div>
+                            <span>200€</span>
+                        </div>
+                    </div>
+                    <p>
+                        Muy, muy lejos, detrás de las montañas de la palabra, lejos de los países Vokalia y Consonantia,
+                        viven los textos ciegos.
+                    </p>
+                    <p><span>2 días 3 noches</span></p>
+                    <hr />
+                    <p>
+                        <span><i></i> Kioto, JP</span>
+                        <span><a href="#">Descubre</a></span>
+                    </p>
+                </div>
+            </div>
+            <!-- zona números de páginas -->
+            <div>
+                <ul>
+                    <li><a href="#">&lt;</a></li>
+                    <li><span>1</span></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&gt;</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- FIN DE SECCIÓN -->
+
+        <footer class="piePagina">
+            <div class="contenedorPie">
+                <div class="columnaPie">
+                    <!-- bloque 1 del pie de página-->
+                    <h2 class="columnaPie__titulo">CarbaTravel</h2>
+                    <p class="columnaPie__texto">
+                        Muy, muy lejos, detrás de las montañas de la palabra, lejos de los países Vokalia y Consonantia,
+                        viven los textos ciegos.
+                    </p>
+                    <ul class="redesSociales">
+                        <li class="redesSociales__icono">
+                            <a href="#" class="redesSociales__enlace"><span class="icon icon-twitter"></span></a>
+                        </li>
+                        <li class="redesSociales__icono">
+                            <a href="#" class="redesSociales__enlace"><span class="icon icon-facebook2"></span></a>
+                        </li>
+                        <li class="redesSociales__icono">
+                            <a href="#" class="redesSociales__enlace"><span class="icon icon-instagram"></span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="columnaPie">
+                    <!-- bloque 2 del pie de página-->
+                    <h2 class="columnaPie__titulo">Información</h2>
+                    <ul class="columnaPie__lista">
+                        <li class="columnaPie__elemento"><a href="" class="columnaPie__enlace">Acerca de</a></li>
+                        <li class="columnaPie__elemento"><a href="" class="columnaPie__enlace">Servicios</a></li>
+                        <li class="columnaPie__elemento">
+                            <a href="" class="columnaPie__enlace">Términos y condiciones</a>
+                        </li>
+                        <li class="columnaPie__elemento"><a href="" class="columnaPie__enlace">Colabora</a></li>
+                        <li class="columnaPie__elemento">
+                            <a href="" class="columnaPie__enlace">Mejor precio garantizado</a>
+                        </li>
+                        <li class="columnaPie__elemento">
+                            <a href="" class="columnaPie__enlace">Política de privacidad</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="columnaPie">
+                    <!-- bloque 3 del pie de página-->
+                    <h2 class="columnaPie__titulo">Suporte de clientes</h2>
+                    <ul class="columnaPie__lista">
+                        <li class="columnaPie__elemento"><a href="" class="columnaPie__enlace">FAQ</a></li>
+                        <li class="columnaPie__elemento"><a href="" class="columnaPie__enlace">Opciones de pago</a></li>
+                        <li class="columnaPie__elemento"><a href="" class="columnaPie__enlace">Reservar viajes</a></li>
+                        <li class="columnaPie__elemento"><a href="" class="columnaPie__enlace">Cómo funciona esto</a></li>
+                        <li class="columnaPie__elemento"><a href="" class="columnaPie__enlace">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div class="columnaPie">
+                    <!-- bloque 4 del pie de página-->
+                    <h2 class="columnaPie__titulo">Tienes preguntas?</h2>
+                    <div class="referencias">
+                        <ul class="referencias__lista">
+                            <li class="referencias__elemento">
+                                <span class="icon icon-location2"> </span
+                                ><span class="referencias__localizacion"
+                                    >203 Fake St. Mountain View, San Francisco, California, USA</span
+                                >
+                            </li>
+                            <li class="referencias__elemento">
+                                <a href="#" class="referencias__enlaces"
+                                    ><span class="icon icon-phone"> </span
+                                    ><span class="referencias__localizacion">+2 392 3929 210</span></a
+                                >
+                            </li>
+                            <li class="referencias__elemento">
+                                <a href="#" class="referencias__enlaces"
+                                    ><span class="icon icon-envelop"> </span
+                                    ><span class="referencias__localizacion">info@yourdomain.com</span></a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
