@@ -1,3 +1,4 @@
+/* ! Común */
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +27,7 @@
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
 }
+/* ! Zona 1 - Header */
 .navegacionPrincipal {
     width: 80%;
     margin: 0 auto;
@@ -49,16 +51,6 @@
     grid-template-columns: auto;
     grid-template-rows: 50px 350px;
     align-items: start;
-}
-.zonaTitulo {
-    align-self: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-.titulo {
-    font: normal 2em fuenteGrande;
-    color: white;
 }
 .menuHorizontal {
     display: flex;
@@ -87,6 +79,150 @@
     color: white;
     padding: 0 20px;
 }
+/* ! Zona 2 - Fondo */
+.zonaTitulo {
+    align-self: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.titulo {
+    font: normal 2em fuenteGrande;
+    color: white;
+}
+/* ! Zona 3 - Lateral Izquierdo */
+.lateralIzquierdo {
+    width: 25%;
+    padding: 0 5px;
+}
+.bloqueEncontrarCiudad {
+    padding: 10px 10px;
+    background-color: #f8faff;
+    color: #e6e6e6;
+    border: 1px solid #e6e6e6;
+}
+.bloqueEncontrarCiudad__titulo {
+    font: bold 0.8em fuenteNormal;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #717171;
+    text-transform: uppercase;
+}
+.contenedorCajaSeleccion__cajaSeleccion {
+    width: 100%;
+    height: 30px;
+    text-align: justify;
+    font: normal 0.7em fuentePequena;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.selectorPrecio {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 25px auto 25px auto;
+    background-color: #f8faff;
+}
+.selectorPrecio__negativo1,
+.selectorPrecio__negativo2 {
+    color: #f85959;
+}
+.selectorPrecio__negativo1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+.selectorPrecio__cantidadInferior {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+.selectorPrecio__cursor1 {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+}
+.selectorPrecio__negativo2 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+.selectorPrecio__cantidadInferior,
+.selectorPrecio__cantidadSuperior {
+    background-color: #f8faff;
+    border: none;
+    text-align: center;
+    font: normal 0.7em fuenteNormal;
+}
+.selectorPrecio__cantidadSuperior {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+}
+.selectorPrecio__cursor2 {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 1;
+}
+.selectorPrecio__cursor1,
+.selectorPrecio__cursor2 {
+    height: 0.2em;
+    margin-bottom: 10px;
+    appearance: none;
+    background-color: #f85959;
+}
+.selectorPrecio__cursor1:hover,
+.selectorPrecio__cursor2:hover {
+    cursor: pointer;
+}
+.selectorPrecio__cursor1::-webkit-slider-thumb,
+.selectorPrecio__cursor2::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #ffffff;
+    border: 1px solid #f85959;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: #f85959;
+}
+.contenedorCajaSeleccion__boton {
+    background-color: #f85959;
+    color: #ffffff;
+    border: none;
+    font: normal 0.8em fuenteNormal;
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+}
+.contenedorCajaSeleccion__boton:hover {
+    background-color: transparent;
+    border: 1px solid #f85959;
+    color: #f85959;
+    cursor: pointer;
+}
+/* Bloque clasificación */
+.bloqueValoracion {
+    width: 100%;
+    padding: 0 5px 10px;
+    border: 1px solid #e6e6e6;
+    background-color: #f8faff;
+}
+.bloqueValoracion__titulo {
+    font: bold 0.8em fuenteNormal;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+.bloqueValoracion__fila {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-bottom: 10px;
+}
+.bloqueValoracion__estrella {
+    margin-left: 10px;
+    color: #f85959;
+    background-color: #ffffff;
+}
+/* ! Zona 4 - Destinos */
+/* ! Zona 5 - Footer */
 .piePagina {
     background-color: #222831;
 }
@@ -153,4 +289,9 @@
 }
 .referencias__elemento {
     padding-bottom: 10px;
+}
+.zonaCentral {
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
 }

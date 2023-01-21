@@ -38,21 +38,30 @@
             </div>
         </header>
         <!-- zona contenido-->
-        <section>
+        <section class="zonaCentral">
             <!-- lateral izquierdo -->
-            <div>
+            <div class="lateralIzquierdo">
                 <!-- bloque encontrar ciudad -->
-                <div>
-                    <h3>Encontrar ciudad</h3>
+                <div class="bloqueEncontrarCiudad">
+                    <h3 class="bloqueEncontrarCiudad__titulo">Encontrar ciudad</h3>
                     <form action="#">
-                        <div class="interiorEncontrarCiudad">
-                            <div>
-                                <input type="text" placeholder="Destino, Ciudad" />
+                        <div>
+                            <div class="contenedorCajaSeleccion">
+                                <input
+                                    class="contenedorCajaSeleccion__cajaSeleccion"
+                                    type="text"
+                                    placeholder="Destino, Ciudad"
+                                />
                             </div>
                             <div>
                                 <div>
                                     <div><span></span></div>
-                                    <select name="" id="" placeholder="Búsqueda palabra clave">
+                                    <select
+                                        class="contenedorCajaSeleccion__cajaSeleccion"
+                                        name=""
+                                        id=""
+                                        placeholder="Búsqueda palabra clave"
+                                    >
                                         <option value="">Seleccionar Ubicación</option>
                                         <option value="">San Francisco USA</option>
                                         <option value="">Berlin Alemania</option>
@@ -62,68 +71,135 @@
                                 </div>
                             </div>
                             <div>
-                                <input type="text" id="checkin_date" placeholder="Fecha desde" />
+                                <input
+                                    class="contenedorCajaSeleccion__cajaSeleccion"
+                                    type="text"
+                                    id="checkin_date"
+                                    placeholder="Fecha desde"
+                                />
                             </div>
                             <div>
-                                <input type="text" id="checkin_date" placeholder="Fecha hasta" />
+                                <input
+                                    class="contenedorCajaSeleccion__cajaSeleccion"
+                                    type="text"
+                                    id="checkin_date"
+                                    placeholder="Fecha hasta"
+                                />
                             </div>
                             <div>
-                                <div>
-                                    <span>
-                                        <input type="number" value="25000" min="0" max="120000" /> -
-                                        <input type="number" value="50000" min="0" max="120000" />
-                                    </span>
-                                    <input value="1000" min="0" max="120000" step="500" type="range" />
-                                    <input value="50000" min="0" max="120000" step="500" type="range" />
+                                <div class="selectorPrecio">
+                                    <input
+                                        class="selectorPrecio__cantidadInferior contenedorCajaSeleccion__cajaSeleccion--derecha"
+                                        type="number"
+                                        value="25000"
+                                        min="0"
+                                        max="120000"
+                                    />
+                                    <span class="selectorPrecio__negativo1">-</span>
+                                    <span class="selectorPrecio__negativo2">-</span>
+                                    <input
+                                        class="selectorPrecio__cantidadSuperior contenedorCajaSeleccion__cajaSeleccion--derecha"
+                                        type="number"
+                                        value="50000"
+                                        min="0"
+                                        max="120000"
+                                    />
+
+                                    <input
+                                        class="selectorPrecio__cursor1"
+                                        value="1000"
+                                        min="0"
+                                        max="120000"
+                                        step="500"
+                                        type="range"
+                                    />
+                                    <input
+                                        class="selectorPrecio__cursor2"
+                                        value="50000"
+                                        min="0"
+                                        max="120000"
+                                        step="500"
+                                        type="range"
+                                    />
                                 </div>
                             </div>
                             <div>
-                                <input type="submit" value="Buscar" />
+                                <input class="contenedorCajaSeleccion__boton" type="submit" value="Buscar" />
                             </div>
                         </div>
                     </form>
                 </div>
                 <!-- bloque valoración estrellas -->
-                <div>
-                    <h3>Clasificación estrellas</h3>
+                <div class="bloqueValoracion">
+                    <h3 class="bloqueValoracion__titulo">Clasificación estrellas</h3>
                     <form method="post">
-                        <div>
+                        <div class="bloqueValoracion__fila">
                             <input type="checkbox" id="exampleCheck1" />
                             <label for="exampleCheck1">
                                 <p>
-                                    <span><i></i><i></i><i></i><i></i><i></i></span>
+                                    <span
+                                        ><i class="icon icon-star-full bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-full bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-full bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-full bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-full bloqueValoracion__estrella"></i
+                                    ></span>
                                 </p>
                             </label>
                         </div>
-                        <div>
+                        <div class="bloqueValoracion__fila">
                             <input type="checkbox" id="exampleCheck1" />
                             <label for="exampleCheck1">
                                 <p>
-                                    <span><i></i><i></i><i></i><i></i><i></i></span>
+                                    <span
+                                        ><i class="icon icon-star-full bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-full bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-full bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-full bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-empty bloqueValoracion__estrella"></i
+                                    ></span>
                                 </p>
                             </label>
                         </div>
-                        <div>
+                        <div class="bloqueValoracion__fila">
                             <input type="checkbox" id="exampleCheck1" />
                             <label for="exampleCheck1">
                                 <p>
-                                    <span><i></i><i></i><i></i><i></i><i></i></span>
+                                    <span
+                                        ><i class="icon icon-star-full bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-full bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-full bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-empty bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-empty bloqueValoracion__estrella"></i
+                                    ></span>
                                 </p>
                             </label>
                         </div>
-                        <div>
+                        <div class="bloqueValoracion__fila">
                             <input type="checkbox" id="exampleCheck1" />
                             <label for="exampleCheck1">
                                 <p>
-                                    <span><i></i><i></i><i></i><i></i><i></i></span>
+                                    <span
+                                        ><i class="icon icon-star-full bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-full bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-empty bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-empty bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-empty bloqueValoracion__estrella"></i
+                                    ></span>
                                 </p>
                             </label>
                         </div>
-                        <div>
+                        <div class="bloqueValoracion__fila">
                             <input type="checkbox" id="exampleCheck1" />
                             <label for="exampleCheck1">
                                 <p>
-                                    <span><i></i><i></i><i></i><i></i><i></i></span>
+                                    <span
+                                        ><i class="icon icon-star-full bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-empty bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-empty bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-empty bloqueValoracion__estrella"></i
+                                        ><i class="icon icon-star-empty bloqueValoracion__estrella"></i
+                                    ></span>
                                 </p>
                             </label>
                         </div>
