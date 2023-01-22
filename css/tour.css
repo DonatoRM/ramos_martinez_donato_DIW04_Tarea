@@ -1,4 +1,16 @@
 /* ! Común */
+:root {
+    /* Colores */
+    --negro: #000000;
+    --grisOscuro: #717171;
+    --grisMedio: #e6e6e6;
+    --grisClaro: #f8faff;
+    --rojo: #f85959;
+    --blanco: #ffffff;
+    --rosa: #fdd3d3;
+    --verde: #8bc34a;
+    --azulOscuro: #222831;
+}
 * {
     margin: 0;
     padding: 0;
@@ -72,8 +84,8 @@
     background-color: transparent;
 }
 .menuHorizontal__opcion--agregar:hover {
-    background-color: #f85959;
-    border-color: #f85959;
+    background-color: var(--rojo);
+    border-color: var(--rojo);
 }
 .menuHorizontal__enlace {
     color: white;
@@ -97,15 +109,15 @@
 }
 .bloqueEncontrarCiudad {
     padding: 10px 10px;
-    background-color: #f8faff;
-    color: #e6e6e6;
-    border: 1px solid #e6e6e6;
+    background-color: var(--grisClaro);
+    color: var(--grisMedio);
+    border: 1px solid var(--grisMedio);
 }
 .bloqueEncontrarCiudad__titulo {
     font: bold 0.8em fuenteNormal;
     text-align: center;
     padding-bottom: 10px;
-    color: #717171;
+    color: var(--grisOscuro);
     text-transform: uppercase;
 }
 .contenedorCajaSeleccion__cajaSeleccion {
@@ -120,11 +132,11 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 25px auto 25px auto;
-    background-color: #f8faff;
+    background-color: var(--grisClaro);
 }
 .selectorPrecio__negativo1,
 .selectorPrecio__negativo2 {
-    color: #f85959;
+    color: var(--rojo);
 }
 .selectorPrecio__negativo1 {
     grid-column: 1 / span 1;
@@ -144,7 +156,7 @@
 }
 .selectorPrecio__cantidadInferior,
 .selectorPrecio__cantidadSuperior {
-    background-color: #f8faff;
+    background-color: var(--grisClaro);
     border: none;
     text-align: center;
     font: normal 0.7em fuenteNormal;
@@ -162,7 +174,7 @@
     height: 0.2em;
     margin-bottom: 10px;
     appearance: none;
-    background-color: #f85959;
+    background-color: var(--rojo);
 }
 .selectorPrecio__cursor1:hover,
 .selectorPrecio__cursor2:hover {
@@ -171,8 +183,8 @@
 .selectorPrecio__cursor1::-webkit-slider-thumb,
 .selectorPrecio__cursor2::-webkit-slider-thumb {
     -webkit-appearance: none;
-    background: #ffffff;
-    border: 1px solid #f85959;
+    background: var(--blanco);
+    border: 1px solid var(--rojo);
     width: 15px;
     height: 15px;
     border-radius: 15px;
@@ -180,11 +192,11 @@
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-    background-color: #f85959;
+    background-color: var(--rojo);
 }
 .contenedorCajaSeleccion__boton {
-    background-color: #f85959;
-    color: #ffffff;
+    background-color: var(--rojo);
+    color: var(--blanco);
     border: none;
     font: normal 0.8em fuenteNormal;
     width: 100%;
@@ -193,16 +205,16 @@
 }
 .contenedorCajaSeleccion__boton:hover {
     background-color: transparent;
-    border: 1px solid #f85959;
-    color: #f85959;
+    border: 1px solid var(--rojo);
+    color: var(--rojo);
     cursor: pointer;
 }
 /* Bloque clasificación */
 .bloqueValoracion {
     width: 100%;
     padding: 0 5px 10px;
-    border: 1px solid #e6e6e6;
-    background-color: #f8faff;
+    border: 1px solid var(--grisMedio);
+    background-color: var(--grisClaro);
 }
 .bloqueValoracion__titulo {
     font: bold 0.8em fuenteNormal;
@@ -218,13 +230,166 @@
 }
 .bloqueValoracion__estrella {
     margin-left: 10px;
-    color: #f85959;
-    background-color: #ffffff;
+    color: var(--rojo);
+    background-color: var(--blanco);
 }
 /* ! Zona 4 - Destinos */
+.zonaVisualizacion {
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+}
+.tarjetaLugar {
+    width: 100%;
+    font: normal 0.8em fuentePequeña;
+    padding-bottom: 10px;
+    border: 1px solid var(--grisMedio);
+}
+.tarjetaLugar__superior {
+    display: grid;
+    grid-template-columns: auto 50px;
+    grid-template-rows: auto auto auto auto;
+}
+.tarjetaLugar__imagen {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    width: 100%;
+    height: 200px;
+    /* Para mantener su relación de aspecto mientras se 
+    llena el cuadro de contenido completo del elemento */
+    object-fit: cover;
+}
+.tarjetaLugar__titulo,
+.tarjetaLugar__precio,
+.tarjetaLugar__estrellas,
+.tarjetaLugar__descripcion,
+.tarjetaLugar__dias,
+.tarjetaLugar__destino,
+.tarjetaLugar__boton,
+.tarjetaLugar__valoraciones {
+    padding: 0 10px;
+}
+.tarjetaLugar__titulo,
+.tarjetaLugar__precio {
+    font: normal 1em fuenteNegrita;
+}
+.tarjetaLugar__titulo {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+.tarjetaLugar__enlace {
+    color: var(--negro);
+}
+.tarjetaLugar__precio {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    color: #2f85cf;
+    text-align: right;
+}
+.tarjetaLugar__estrellas {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    color: var(--rojo);
+    background-color: var(--blanco);
+    font-size: 0.7em;
+}
+.tarjetaLugarEstrella {
+    padding-right: 5px;
+}
+.tarjetaLugar__categoria,
+.tarjetaLugar__valoraciones,
+.tarjetaLugar__destino,
+.tarjetaLugar__descripcion {
+    color: var(--grisOscuro);
+}
+.tarjetaLugar__dias {
+    font: normal 0.8em fuenteNegrita;
+}
+.tarjetaLugar__linea {
+    padding-bottom: 10px;
+    margin: 0 5px;
+    border-bottom: 1px solid var(--grisOscuro);
+}
+.tarjetaLugar__valoraciones {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 2;
+}
+.tarjetaLugar__final {
+    padding: 10px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.tarjetaLugar__boton {
+    background-color: var(--verde);
+    padding: 3px 10px 5px;
+    margin-right: 5px;
+}
+.tarjetaLugar__enlace {
+    color: var(--blanco);
+    font: normal 0.7em fuenteNormal;
+}
+.tarjetaLugar--primera {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+.tarjetaLugar--segunda {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+.tarjetaLugar--tercera {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+}
+.tarjetaLugar--cuarta {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+.tarjetaLugar--quinta {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+.tarjetaLugar--sexta {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+}
+.navegacionPaginas {
+    margin: 0 auto;
+}
+.paginas {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+.paginas__elemento {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--rojo);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+}
+.paginas__elemento:hover {
+    background-color: var(--rosa);
+    border-color: transparent;
+}
+.paginas__enlaces {
+    color: var(--rojo);
+}
 /* ! Zona 5 - Footer */
 .piePagina {
-    background-color: #222831;
+    background-color: var(--azulOscuro);
 }
 .contenedorPie {
     margin: 0 auto;
@@ -238,7 +403,7 @@
 .columnaPie {
     width: 150px;
     text-align: left;
-    color: #ffffff;
+    color: var(--blanco);
     margin-bottom: 20px;
 }
 .columnaPie__titulo {
@@ -272,7 +437,7 @@
     -o-border-radius: 40px;
 }
 .redesSociales__enlace {
-    color: #ffffff;
+    color: var(--blanco);
     font-size: 1em;
 }
 .columnaPie__elemento {
@@ -281,17 +446,30 @@
 .columnaPie__enlace,
 .referencias__localizacion {
     font: normal 0.7em fuentePequeña;
-    color: #ffffff;
+    color: var(--blanco);
 }
 .referencias__enlaces {
     font-size: 0.9em;
-    color: #ffffff;
+    color: var(--blanco);
 }
 .referencias__elemento {
     padding-bottom: 10px;
 }
 .zonaCentral {
     width: 70%;
+    min-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 50px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+@media screen and (max-width: 900px) {
+    .botonSanwich {
+        display: block;
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 1;
+    }
 }

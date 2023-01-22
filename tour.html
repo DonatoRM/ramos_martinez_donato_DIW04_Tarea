@@ -40,7 +40,7 @@
         <!-- zona contenido-->
         <section class="zonaCentral">
             <!-- lateral izquierdo -->
-            <div class="lateralIzquierdo">
+            <aside class="lateralIzquierdo">
                 <!-- bloque encontrar ciudad -->
                 <div class="bloqueEncontrarCiudad">
                     <h3 class="bloqueEncontrarCiudad__titulo">Encontrar ciudad</h3>
@@ -205,195 +205,202 @@
                         </div>
                     </form>
                 </div>
-            </div>
+            </aside>
             <!-- Zona destinos con imágenes y descripción -->
-            <div>
+            <main class="zonaVisualizacion">
                 <!-- Paris -->
-                <div>
-                    <div>
-                        <div>
-                            <h3><a href="#">Paris, Francia</a></h3>
-                            <p>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <span>8 Valoraciones</span>
-                            </p>
-                        </div>
-                        <div>
-                            <span>200€</span>
-                        </div>
-                    </div>
-                    <p>
-                        Muy, muy lejos, detrás de las montañas de la palabra, lejos de los países Vokalia y Consonantia,
-                        viven los textos ciegos.
-                    </p>
-                    <p><span>2 días 3 noches</span></p>
-                    <hr />
-                    <p>
-                        <span><i></i> Paris, FR</span>
-                        <span><a href="#">Descubre</a></span>
-                    </p>
-                </div>
-                <!-- California-->
-                <div>
-                    <div>
-                        <h3><a href="#">California, USA</a></h3>
-                        <p>
-                            <i></i>
-                            <i></i>
-                            <i></i>
-                            <i></i>
-                            <i></i>
-                            <span>8 Valoraciones</span>
+                <section class="tarjetaLugar tarjetaLugar--primera">
+                    <div class="tarjetaLugar__superior">
+                        <!-- <div> -->
+                        <img class="tarjetaLugar__imagen" src="./images/destination-1.jpg" alt="Imagen de París" />
+                        <h3 class="tarjetaLugar__titulo"><a class="tarjetaLugar__enlace" href="#">Paris, Francia</a></h3>
+                        <p class="tarjetaLugar__estrellas">
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i><span class="tarjetaLugar__categoria">8</span>
                         </p>
-
-                        <div>
+                        <p class="tarjetaLugar__valoraciones">
+                            <span>Valoraciones</span>
+                        </p>
+                        <!-- </div> -->
+                        <div class="tarjetaLugar__precio">
                             <span>200€</span>
                         </div>
                     </div>
-                    <p>
+                    <p class="tarjetaLugar__descripcion">
                         Muy, muy lejos, detrás de las montañas de la palabra, lejos de los países Vokalia y Consonantia,
                         viven los textos ciegos.
                     </p>
-                    <p><span>2 días 3 noches</span></p>
-                    <hr />
-                    <p>
-                        <span><i></i> San Franciso, CA</span>
-                        <span><a href="#">Descubre</a></span>
+                    <p class="tarjetaLugar__linea"><span class="tarjetaLugar__dias">2 días 3 noches</span></p>
+                    <p class="tarjetaLugar__final">
+                        <span class="tarjetaLugar__destino"><i class="icon icon-map2"></i> Paris, FR</span>
+                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlace" href="#">Descubre</a></span>
                     </p>
-                </div>
+                </section>
+                <!-- California-->
+                <section class="tarjetaLugar tarjetaLugar--segunda">
+                    <div class="tarjetaLugar__superior">
+                        <img class="tarjetaLugar__imagen" src="./images/destination-2.jpg" alt="Imagen de California" />
+                        <h3 class="tarjetaLugar__titulo"><a class="tarjetaLugar__enlace" href="#">California, USA</a></h3>
+                        <p class="tarjetaLugar__estrellas">
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i><span class="tarjetaLugar__categoria">8</span></i>
+                        </p>
+                        <p class="tarjetaLugar__valoraciones">
+                            <span>Valoraciones</span>
+                        </p>
+                        <div>
+                            <span class="tarjetaLugar__precio">200€</span>
+                        </div>
+                    </div>
+                    <p class="tarjetaLugar__descripcion">
+                        Muy, muy lejos, detrás de las montañas de la palabra, lejos de los países Vokalia y Consonantia,
+                        viven los textos ciegos.
+                    </p>
+                    <p class="tarjetaLugar__linea"><span class="tarjetaLugar__dias">2 días 3 noches</span></p>
+                    <p class="tarjetaLugar__final">
+                        <span class="tarjetaLugar__destino"><i class="icon icon-map2"></i> San Franciso, CA</span>
+                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlace" href="#">Descubre</a></span>
+                    </p>
+                </section>
                 <!-- Londres-->
-                <div>
-                    <div>
+                <section class="tarjetaLugar tarjetaLugar--tercera">
+                    <div class="tarjetaLugar__superior">
+                        <!-- <div> -->
+                        <img class="tarjetaLugar__imagen" src="./images/destination-3.jpg" alt="Imagen de Londres" />
+                        <h3 class="tarjetaLugar__titulo"><a class="tarjetaLugar__enlace" href="#">Londres, GB</a></h3>
+                        <p class="tarjetaLugar__estrellas">
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i><span class="tarjetaLugar__categoria">8</span></i>
+                        </p>
+                        <p class="tarjetaLugar__valoraciones">
+                            <span>Valoraciones</span>
+                        </p>
+                        <!-- </div> -->
                         <div>
-                            <h3><a href="#">Londres, GB</a></h3>
-                            <p>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <span>8 Valoraciones</span>
-                            </p>
-                        </div>
-                        <div>
-                            <span>200€</span>
+                            <span class="tarjetaLugar__precio">200€</span>
                         </div>
                     </div>
-                    <p>
+                    <p class="tarjetaLugar__descripcion">
                         Muy, muy lejos, detrás de las montañas de la palabra, lejos de los países Vokalia y Consonantia,
                         viven los textos ciegos.
                     </p>
-                    <p><span>2 días 3 noches</span></p>
-                    <hr />
-                    <p>
-                        <span><i></i> Londres, GB</span>
-                        <span><a href="#">Descubre</a></span>
+                    <p class="tarjetaLugar__linea"><span class="tarjetaLugar__dias">2 días 3 noches</span></p>
+                    <p class="tarjetaLugar__final">
+                        <span class="tarjetaLugar__destino"><i class="icon icon-map2"></i> Londres, GB</span>
+                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlace" href="#">Descubre</a></span>
                     </p>
-                </div>
+                </section>
                 <!-- Singapur-->
-                <div>
-                    <div>
+                <section class="tarjetaLugar tarjetaLugar--cuarta">
+                    <div class="tarjetaLugar__superior">
+                        <!-- <div> -->
+                        <img class="tarjetaLugar__imagen" src="./images/destination-4.jpg" alt="Imagen de Sungapur" />
+                        <h3 class="tarjetaLugar__titulo"><a class="tarjetaLugar__enlace" href="#">Singapur, SG</a></h3>
+                        <p class="tarjetaLugar__estrellas">
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i><span class="tarjetaLugar__categoria">8</span></i>
+                        </p>
+                        <p class="tarjetaLugar__valoraciones">
+                            <span>Valoraciones</span>
+                        </p>
+                        <!-- </div> -->
                         <div>
-                            <h3><a href="#">Singapur, SG</a></h3>
-                            <p>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <span>8 Valoraciones</span>
-                            </p>
-                        </div>
-                        <div>
-                            <span>200€</span>
+                            <span class="tarjetaLugar__precio">200€</span>
                         </div>
                     </div>
-                    <p>
+                    <p class="tarjetaLugar__descripcion">
                         Muy, muy lejos, detrás de las montañas de la palabra, lejos de los países Vokalia y Consonantia,
                         viven los textos ciegos.
                     </p>
-                    <p><span>2 días 3 noches</span></p>
-                    <hr />
-                    <p>
-                        <span><i></i> Singapur, SG</span>
-                        <span><a href="#">Descubre</a></span>
+                    <p class="tarjetaLugar__linea"><span class="tarjetaLugar__dias">2 días 3 noches</span></p>
+                    <p class="tarjetaLugar__final">
+                        <span class="tarjetaLugar__destino"><i class="icon icon-map2"></i> Singapur, SG</span>
+                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlace" href="#">Descubre</a></span>
                     </p>
-                </div>
+                </section>
                 <!-- Signey-->
-                <div>
-                    <div>
+                <section class="tarjetaLugar tarjetaLugar--quinta">
+                    <div class="tarjetaLugar__superior">
+                        <!-- <div> -->
+                        <img class="tarjetaLugar__imagen" src="./images/destination-5.jpg" alt="Imagen de Sidney" />
+                        <h3 class="tarjetaLugar__titulo">
+                            <a class="tarjetaLugar__enlace" href="#">Sidney, Australia</a>
+                        </h3>
+                        <p class="tarjetaLugar__estrellas">
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i><span class="tarjetaLugar__categoria">8</span></i>
+                        </p>
+                        <p class="tarjetaLugar__valoraciones">
+                            <span>Valoraciones</span>
+                        </p>
+                        <!-- </div> -->
                         <div>
-                            <h3><a href="#">Sidney, Australia</a></h3>
-                            <p>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <span>8 Valoraciones</span>
-                            </p>
-                        </div>
-                        <div>
-                            <span>200€</span>
+                            <span class="tarjetaLugar__precio">200€</span>
                         </div>
                     </div>
-                    <p>
+                    <p class="tarjetaLugar__descripcion">
                         Muy, muy lejos, detrás de las montañas de la palabra, lejos de los países Vokalia y Consonantia,
                         viven los textos ciegos.
                     </p>
-                    <p><span>2 días 3 noches</span></p>
-                    <hr />
-                    <p>
-                        <span><i></i> Sidney, Australia</span>
-                        <span><a href="#">Descubre</a></span>
+                    <p class="tarjetaLugar__linea"><span class="tarjetaLugar__dias">2 días 3 noches</span></p>
+                    <p class="tarjetaLugar__final">
+                        <span class="tarjetaLugar__destino"><i class="icon icon-map2"></i> Sidney, Australia</span>
+                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlace" href="#">Descubre</a></span>
                     </p>
-                </div>
+                </section>
                 <!-- Kioto-->
-                <div>
-                    <div>
-                        <div>
-                            <h3><a href="#">Kioto, Japón</a></h3>
-                            <p>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <span>8 Valoraciones</span>
-                            </p>
-                        </div>
-                        <div>
+                <section class="tarjetaLugar tarjetaLugar--sexta">
+                    <div class="tarjetaLugar__superior">
+                        <!-- <div> -->
+                        <img class="tarjetaLugar__imagen" src="./images/destination-6.jpg" alt="Imagen de Kioto" />
+                        <h3 class="tarjetaLugar__titulo"><a class="tarjetaLugar__enlace" href="#">Kioto, Japón</a></h3>
+                        <p class="tarjetaLugar__estrellas">
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
+                            <i class="icon icon-star-full tarjetaLugarEstrella"></i><span class="tarjetaLugar__categoria">8</span></i>
+                        </p>
+                        <p class="tarjetaLugar__valoraciones">
+                            <span>Valoraciones</span>
+                        </p>
+                        <!-- </div> -->
+                        <div class="tarjetaLugar__precio">
                             <span>200€</span>
                         </div>
                     </div>
-                    <p>
+                    <p class="tarjetaLugar__descripcion">
                         Muy, muy lejos, detrás de las montañas de la palabra, lejos de los países Vokalia y Consonantia,
                         viven los textos ciegos.
                     </p>
-                    <p><span>2 días 3 noches</span></p>
-                    <hr />
-                    <p>
-                        <span><i></i> Kioto, JP</span>
-                        <span><a href="#">Descubre</a></span>
+                    <p class="tarjetaLugar__linea"><span class="tarjetaLugar__dias">2 días 3 noches</span></p>
+                    <p class="tarjetaLugar__final">
+                        <span class="tarjetaLugar__destino"><i class="icon icon-map2"></i> Kioto, JP</span>
+                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlace" href="#">Descubre</a></span>
                     </p>
-                </div>
-            </div>
+                </section>
+            </main>
             <!-- zona números de páginas -->
-            <div>
-                <ul>
-                    <li><a href="#">&lt;</a></li>
-                    <li><span>1</span></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">&gt;</a></li>
+            <nav class="navegacionPaginas">
+                <ul class="paginas">
+                    <li class="paginas__elemento"><a class="paginas__enlaces" href="#">&lt;</a></li>
+                    <li class="paginas__elemento"><span class="paginas__enlaces">1</span></li>
+                    <li class="paginas__elemento"><a class="paginas__enlaces" href="#">2</a></li>
+                    <li class="paginas__elemento"><a class="paginas__enlaces" href="#">3</a></li>
+                    <li class="paginas__elemento"><a class="paginas__enlaces" href="#">4</a></li>
+                    <li class="paginas__elemento"><a class="paginas__enlaces" href="#">5</a></li>
+                    <li class="paginas__elemento"><a class="paginas__enlaces" href="#">&gt;</a></li>
                 </ul>
-            </div>
+            </nav>
         </section>
         <!-- FIN DE SECCIÓN -->
 
