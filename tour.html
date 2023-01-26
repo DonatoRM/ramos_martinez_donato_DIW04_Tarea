@@ -14,10 +14,27 @@
             <nav class="navegacionPrincipal">
                 <!-- Logo -->
                 <a class="logo" href="">CarbaTravel.</a>
-                <button class="botonSanwich"><span></span> Menu</button>
+                <button class="botonHamburguesa">
+                    <span class="botonHamburguesa__icono">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2rem"
+                            height="2rem"
+                            fill="currentColor"
+                            class="bi bi-list"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                            />
+                        </svg>
+                    </span>
+                    Menu
+                </button>
 
                 <!-- menú horizontal de enlaces -->
-                <div class="menu">
+                <div class="navegacionPrincipal__superior">
                     <ul class="menuHorizontal">
                         <li class="menuHorizontal__opcion"><a class="menuHorizontal__enlace" href="">Home</a></li>
                         <li class="menuHorizontal__opcion"><a class="menuHorizontal__enlace" href="">Acerca de</a></li>
@@ -26,7 +43,7 @@
                         <li class="menuHorizontal__opcion"><a class="menuHorizontal__enlace" href="">Blog</a></li>
                         <li class="menuHorizontal__opcion"><a class="menuHorizontal__enlace" href="">Contacto</a></li>
                         <li class="menuHorizontal__opcion menuHorizontal__opcion--agregar">
-                            <a class="menuHorizontal__enlace" href="">Agregar listado</a>
+                            <a class="menuHorizontal__enlace menuHorizontal__enlace--agregar" href="">Agregar listado</a>
                         </li>
                     </ul>
                 </div>
@@ -34,7 +51,7 @@
             <!-- Final nav -->
 
             <div class="zonaTitulo">
-                <h1 class="titulo">Destinos</h1>
+                <h1 class="zonaTitulo__titulo">Destinos</h1>
             </div>
         </header>
         <!-- zona contenido-->
@@ -65,7 +82,7 @@
                                         <option value="">Seleccionar Ubicación</option>
                                         <option value="">San Francisco USA</option>
                                         <option value="">Berlin Alemania</option>
-                                        <option value="">Lodres Reino Unido</option>
+                                        <option value="">Londres Reino Unido</option>
                                         <option value="">Paris Francia</option>
                                     </select>
                                 </div>
@@ -215,10 +232,11 @@
                         <img class="tarjetaLugar__imagen" src="./images/destination-1.jpg" alt="Imagen de París" />
                         <h3 class="tarjetaLugar__titulo"><a class="tarjetaLugar__enlace" href="#">Paris, Francia</a></h3>
                         <p class="tarjetaLugar__estrellas">
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i><span class="tarjetaLugar__categoria">8</span>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i
+                            ><span class="tarjetaLugar__categoria">8</span>
                         </p>
                         <p class="tarjetaLugar__valoraciones">
                             <span>Valoraciones</span>
@@ -235,7 +253,7 @@
                     <p class="tarjetaLugar__linea"><span class="tarjetaLugar__dias">2 días 3 noches</span></p>
                     <p class="tarjetaLugar__final">
                         <span class="tarjetaLugar__destino"><i class="icon icon-map2"></i> Paris, FR</span>
-                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlace" href="#">Descubre</a></span>
+                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlaceBoton" href="#">Descubre</a></span>
                     </p>
                 </section>
                 <!-- California-->
@@ -244,10 +262,11 @@
                         <img class="tarjetaLugar__imagen" src="./images/destination-2.jpg" alt="Imagen de California" />
                         <h3 class="tarjetaLugar__titulo"><a class="tarjetaLugar__enlace" href="#">California, USA</a></h3>
                         <p class="tarjetaLugar__estrellas">
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i><span class="tarjetaLugar__categoria">8</span></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i
+                            ><span class="tarjetaLugar__categoria">8</span>
                         </p>
                         <p class="tarjetaLugar__valoraciones">
                             <span>Valoraciones</span>
@@ -263,7 +282,7 @@
                     <p class="tarjetaLugar__linea"><span class="tarjetaLugar__dias">2 días 3 noches</span></p>
                     <p class="tarjetaLugar__final">
                         <span class="tarjetaLugar__destino"><i class="icon icon-map2"></i> San Franciso, CA</span>
-                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlace" href="#">Descubre</a></span>
+                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlaceBoton" href="#">Descubre</a></span>
                     </p>
                 </section>
                 <!-- Londres-->
@@ -273,10 +292,11 @@
                         <img class="tarjetaLugar__imagen" src="./images/destination-3.jpg" alt="Imagen de Londres" />
                         <h3 class="tarjetaLugar__titulo"><a class="tarjetaLugar__enlace" href="#">Londres, GB</a></h3>
                         <p class="tarjetaLugar__estrellas">
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i><span class="tarjetaLugar__categoria">8</span></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i
+                            ><span class="tarjetaLugar__categoria">8</span>
                         </p>
                         <p class="tarjetaLugar__valoraciones">
                             <span>Valoraciones</span>
@@ -293,7 +313,7 @@
                     <p class="tarjetaLugar__linea"><span class="tarjetaLugar__dias">2 días 3 noches</span></p>
                     <p class="tarjetaLugar__final">
                         <span class="tarjetaLugar__destino"><i class="icon icon-map2"></i> Londres, GB</span>
-                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlace" href="#">Descubre</a></span>
+                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlaceBoton" href="#">Descubre</a></span>
                     </p>
                 </section>
                 <!-- Singapur-->
@@ -303,10 +323,11 @@
                         <img class="tarjetaLugar__imagen" src="./images/destination-4.jpg" alt="Imagen de Sungapur" />
                         <h3 class="tarjetaLugar__titulo"><a class="tarjetaLugar__enlace" href="#">Singapur, SG</a></h3>
                         <p class="tarjetaLugar__estrellas">
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i><span class="tarjetaLugar__categoria">8</span></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i
+                            ><span class="tarjetaLugar__categoria">8</span>
                         </p>
                         <p class="tarjetaLugar__valoraciones">
                             <span>Valoraciones</span>
@@ -323,7 +344,7 @@
                     <p class="tarjetaLugar__linea"><span class="tarjetaLugar__dias">2 días 3 noches</span></p>
                     <p class="tarjetaLugar__final">
                         <span class="tarjetaLugar__destino"><i class="icon icon-map2"></i> Singapur, SG</span>
-                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlace" href="#">Descubre</a></span>
+                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlaceBoton" href="#">Descubre</a></span>
                     </p>
                 </section>
                 <!-- Signey-->
@@ -335,10 +356,11 @@
                             <a class="tarjetaLugar__enlace" href="#">Sidney, Australia</a>
                         </h3>
                         <p class="tarjetaLugar__estrellas">
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i><span class="tarjetaLugar__categoria">8</span></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i
+                            ><span class="tarjetaLugar__categoria">8</span>
                         </p>
                         <p class="tarjetaLugar__valoraciones">
                             <span>Valoraciones</span>
@@ -355,7 +377,7 @@
                     <p class="tarjetaLugar__linea"><span class="tarjetaLugar__dias">2 días 3 noches</span></p>
                     <p class="tarjetaLugar__final">
                         <span class="tarjetaLugar__destino"><i class="icon icon-map2"></i> Sidney, Australia</span>
-                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlace" href="#">Descubre</a></span>
+                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlaceBoton" href="#">Descubre</a></span>
                     </p>
                 </section>
                 <!-- Kioto-->
@@ -365,10 +387,11 @@
                         <img class="tarjetaLugar__imagen" src="./images/destination-6.jpg" alt="Imagen de Kioto" />
                         <h3 class="tarjetaLugar__titulo"><a class="tarjetaLugar__enlace" href="#">Kioto, Japón</a></h3>
                         <p class="tarjetaLugar__estrellas">
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i>
-                            <i class="icon icon-star-full tarjetaLugarEstrella"></i><span class="tarjetaLugar__categoria">8</span></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i>
+                            <i class="icon icon-star-full tarjetaLugar__estrella"></i
+                            ><span class="tarjetaLugar__categoria">8</span>
                         </p>
                         <p class="tarjetaLugar__valoraciones">
                             <span>Valoraciones</span>
@@ -385,7 +408,7 @@
                     <p class="tarjetaLugar__linea"><span class="tarjetaLugar__dias">2 días 3 noches</span></p>
                     <p class="tarjetaLugar__final">
                         <span class="tarjetaLugar__destino"><i class="icon icon-map2"></i> Kioto, JP</span>
-                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlace" href="#">Descubre</a></span>
+                        <span class="tarjetaLugar__boton"><a class="tarjetaLugar__enlaceBoton" href="#">Descubre</a></span>
                     </p>
                 </section>
             </main>
@@ -393,7 +416,9 @@
             <nav class="navegacionPaginas">
                 <ul class="paginas">
                     <li class="paginas__elemento"><a class="paginas__enlaces" href="#">&lt;</a></li>
-                    <li class="paginas__elemento"><span class="paginas__enlaces">1</span></li>
+                    <li class="paginas__elemento paginas__elemento--seleccionado">
+                        <span class="paginas__enlaces">1</span>
+                    </li>
                     <li class="paginas__elemento"><a class="paginas__enlaces" href="#">2</a></li>
                     <li class="paginas__elemento"><a class="paginas__enlaces" href="#">3</a></li>
                     <li class="paginas__elemento"><a class="paginas__enlaces" href="#">4</a></li>
@@ -406,7 +431,7 @@
 
         <footer class="piePagina">
             <div class="contenedorPie">
-                <div class="columnaPie">
+                <div class="columnaPie columnaPie--primera">
                     <!-- bloque 1 del pie de página-->
                     <h2 class="columnaPie__titulo">CarbaTravel</h2>
                     <p class="columnaPie__texto">
@@ -425,7 +450,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="columnaPie">
+                <div class="columnaPie columnaPie--segunda">
                     <!-- bloque 2 del pie de página-->
                     <h2 class="columnaPie__titulo">Información</h2>
                     <ul class="columnaPie__lista">
@@ -443,9 +468,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="columnaPie">
+                <div class="columnaPie columnaPie--tercera">
                     <!-- bloque 3 del pie de página-->
-                    <h2 class="columnaPie__titulo">Suporte de clientes</h2>
+                    <h2 class="columnaPie__titulo">Soporte de clientes</h2>
                     <ul class="columnaPie__lista">
                         <li class="columnaPie__elemento"><a href="" class="columnaPie__enlace">FAQ</a></li>
                         <li class="columnaPie__elemento"><a href="" class="columnaPie__enlace">Opciones de pago</a></li>
@@ -454,26 +479,26 @@
                         <li class="columnaPie__elemento"><a href="" class="columnaPie__enlace">Contáctanos</a></li>
                     </ul>
                 </div>
-                <div class="columnaPie">
+                <div class="columnaPie columnaPie--cuarta">
                     <!-- bloque 4 del pie de página-->
                     <h2 class="columnaPie__titulo">Tienes preguntas?</h2>
                     <div class="referencias">
                         <ul class="referencias__lista">
                             <li class="referencias__elemento">
-                                <span class="icon icon-location2"> </span
+                                <span class="icon icon-location2 referencias__icono"> </span
                                 ><span class="referencias__localizacion"
                                     >203 Fake St. Mountain View, San Francisco, California, USA</span
                                 >
                             </li>
                             <li class="referencias__elemento">
                                 <a href="#" class="referencias__enlaces"
-                                    ><span class="icon icon-phone"> </span
+                                    ><span class="icon icon-phone referencias__icono"> </span
                                     ><span class="referencias__localizacion">+2 392 3929 210</span></a
                                 >
                             </li>
                             <li class="referencias__elemento">
                                 <a href="#" class="referencias__enlaces"
-                                    ><span class="icon icon-envelop"> </span
+                                    ><span class="icon icon-envelop referencias__icono"> </span
                                     ><span class="referencias__localizacion">info@yourdomain.com</span></a
                                 >
                             </li>
