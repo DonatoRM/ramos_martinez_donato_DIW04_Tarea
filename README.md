@@ -2,11 +2,11 @@
 
 <h1>Tarea 4 de Diseño de Interfaces Web (DIW)</h1>
 
-<p>En esta actividad se trata de maquetar la página tour.html utilizando estilos CSS/CSS3 para 
+<p>En esta actividad se trata de maquetar la página <b>tour.html</b> utilizando estilos CSS/CSS3 para 
 obtener una apariencia lo más similar posible a la imagen que se muestra en la página 
-siguiente.</p>
+que se adjunta.</p>
 <p>El código HTML se proporciona en el archivo tour.html.<br/> 
-Éste puede modificarse para añadir clases e identificadores o añadir/quitar etiquetas.
+<i>Éste puede modificarse para añadir clases e identificadores o añadir/quitar etiquetas.</i>
 </p>
 <p>Los estilos empleados para el formato de la página se incluirán en un fichero externo con 
 extensión .CSS enlazado al HTML.</p>
