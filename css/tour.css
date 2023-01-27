@@ -794,4 +794,10 @@ html {
         grid-row: 3 / span 1;
         width: 100vw;
     }
+    .abrirMenu {
+        display: block;
+    }
+    .cerrarMenu {
+        display: none;
+    }
 }
