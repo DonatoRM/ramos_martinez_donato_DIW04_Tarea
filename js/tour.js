@@ -1,14 +1,7 @@
-let estadoMenu = false;
 const botonHamburguesa = document.getElementById("botonMenu");
 const menuDesplegable = document.getElementById("menuDesplegable");
-const accionMenu = () => {
+const abrirMenu = () => {
     this.event.preventDefault();
-    if (estadoMenu == false) {
-        menuDesplegable.classList.toggle("abrirMenu");
-        estadoMenu = true;
-    } else {
-        menuDesplegable.classList.toggle("cerrarMenu");
-        estadoMenu = false;
-    }
+    menuDesplegable.classList.toggle("abrirMenu");
 };
-botonHamburguesa.addEventListener("click", accionMenu);
+botonHamburguesa.addEventListener("click", abrirMenu);
