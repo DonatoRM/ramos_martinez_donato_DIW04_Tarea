@@ -1,6 +1,14 @@
-/* ! Común */
+/* ! RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* ! COLORES usados ne la Web */
 :root {
-    /* Colores */
+    /* Colores usados en la Web */
     --negro: #000000;
     --grisOscuro: #717171;
     --grisMedio: #e6e6e6;
@@ -12,18 +20,11 @@
     --azulOscuro: #222831;
     --azulOscuroTransparente: rgb(34, 40, 49, 0.7);
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
+/* ! Se indica el TAMAÑO DE LA LETRA POR DEFECTO para todo el documento */
 html {
-    /* Tamaño inicial de letra de este breakpoint */
     font-size: 14px;
 }
-/* ! Definiciones iniciales */
+/* ! TIPOS DE LETRA usados en la Web */
 @font-face {
     font-family: fuenteNormal;
     src: url("../fonts/Poppins/Poppins-Regular.ttf");
@@ -40,6 +41,7 @@ html {
     font-family: fuenteGrande;
     src: url("../fonts/Poppins/Poppins-ExtraBold.ttf");
 }
+/* ! MENÚ HAMBURGUESA para Móvil */
 .botonHamburguesa {
     display: none;
     grid-column: 3 / span 1;
@@ -58,25 +60,7 @@ html {
     position: relative;
     top: 0.5rem;
 }
-/* ! Zona 1 - Header */
-.navegacionPrincipal {
-    width: 80%;
-    height: 22vh;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo {
-    /* font: normal clamp(1rem, 2vw, 2rem) fuenteNegrita; */
-    /* font: normal 2rem fuenteNegrita; */
-    font: normal clamp(1rem, 2vw, 2rem) fuenteNegrita;
-    color: var(--blanco);
-    width: fit-content;
-    padding: 0.5rem clamp(1rem, 2vw, 2rem);
-    align-self: flex-start;
-}
+/* ! Zona 1 - HEADER */
 .cabecera {
     height: 100vh;
     width: 100vw;
@@ -87,12 +71,27 @@ html {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    /* align-items: center; */
+}
+.logo {
+    font: normal clamp(1rem, 2vw, 2rem) fuenteNegrita;
+    color: var(--blanco);
+    width: fit-content;
+    padding: 0.5rem clamp(1rem, 2vw, 2rem);
+    align-self: flex-start;
+}
+.navegacionPrincipal {
+    width: 80%;
+    height: 22vh;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 .navegacionPrincipal__superior {
     align-self: baseline;
     position: relative;
-    top: 1rem;
+    top: 1.3rem;
 }
 .menuHorizontal {
     display: flex;
@@ -105,6 +104,9 @@ html {
     line-height: 1.2rem;
 }
 .menuHorizontal__opcion--agregar {
+    position: relative;
+    top: -0.5rem;
+    padding: 0.5rem 0;
     border: 1px solid var(--blanco);
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -122,7 +124,7 @@ html {
     padding: 0 0.8rem;
 }
 
-/* ! Zona 2 - Fondo */
+/* ! Zona 2 - FONDO */
 .zonaTitulo {
     height: calc(100vh - 22vh);
     display: flex;
@@ -132,28 +134,26 @@ html {
 }
 .zonaTitulo__titulo {
     position: relative;
-    top: -4vh;
+    top: -10vh;
     font: normal 2rem fuenteGrande;
     color: white;
 }
-/* ! Zona Central */
+/* ! ZONA CENTRAL */
 .zonaCentral {
-    width: 900px;
+    width: 70vw;
     margin: 0 auto;
     padding: 3.6rem 0;
     display: grid;
     grid-template-columns: auto auto;
     grid-row: auto auto;
-    /* display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-content: flex-start; */
+    grid-gap: 0.5rem;
+    justify-content: center;
 }
-/* ! Zona 3 - Lateral Izquierdo */
+/* ! Zona 3 - LATERAL IZQUIERDA */
 .lateralIzquierdo {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
-    width: 200px;
+    width: 250px;
     padding: 0 0.5rem;
 }
 .bloqueEncontrarCiudad {
@@ -161,11 +161,12 @@ html {
     background-color: var(--grisClaro);
     color: var(--grisMedio);
     border: 1px solid var(--grisMedio);
+    margin-bottom: 1rem;
 }
 .bloqueEncontrarCiudad__titulo {
     font: bold 0.8rem fuenteNormal;
     text-align: left;
-    padding-bottom: 0.8rem;
+    padding-bottom: 1.8rem;
     color: var(--negro);
     text-transform: uppercase;
 }
@@ -174,7 +175,7 @@ html {
     height: 2.1rem;
     text-align: justify;
     font: normal 0.7rem fuentePequena;
-    margin-bottom: 0.7rem;
+    margin-bottom: 1.2rem;
     padding-left: 0.7rem;
 }
 .selectorPrecio {
@@ -191,28 +192,28 @@ html {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
 }
-.selectorPrecio__cantidadInferior {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
-}
-.selectorPrecio__cursor1 {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 1;
-}
 .selectorPrecio__negativo2 {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
 }
-.selectorPrecio__cantidadInferior,
+.selectorPrecio__cantidadInferior {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
 .selectorPrecio__cantidadSuperior {
     background-color: var(--grisClaro);
     border: none;
     text-align: center;
     font: normal 0.7rem fuenteNormal;
 }
+.selectorPrecio__cantidadInferior,
 .selectorPrecio__cantidadSuperior {
     grid-column: 2 / span 1;
     grid-row: 3 / span 1;
+}
+.selectorPrecio__cursor1 {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
 }
 .selectorPrecio__cursor2 {
     grid-column: 1 / span 2;
@@ -246,7 +247,7 @@ html {
 .contenedorCajaSeleccion__boton {
     background-color: var(--rojo);
     color: var(--blanco);
-    border: none;
+    border: 1px solid var(--rojo);
     font: normal 0.8rem fuenteNormal;
     width: 100%;
     padding: 0.6rem;
@@ -254,11 +255,10 @@ html {
 }
 .contenedorCajaSeleccion__boton:hover {
     background-color: transparent;
-    border: 1px solid var(--rojo);
     color: var(--rojo);
     cursor: pointer;
 }
-/* Bloque clasificación */
+/* ! BLOQUE CLASIFICACIÓN */
 .bloqueValoracion {
     width: 100%;
     padding: 0 0.4rem 0.8rem;
@@ -282,7 +282,7 @@ html {
     color: var(--rojo);
     background-color: var(--blanco);
 }
-/* ! Zona 4 - Destinos */
+/* ! Zona 4 - DESTINOS */
 .zonaVisualizacion {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
@@ -290,7 +290,7 @@ html {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    grid-gap: 0.8rem;
+    grid-gap: 1.3rem;
 }
 .tarjetaLugar {
     width: 200px;
@@ -308,8 +308,6 @@ html {
     grid-row: 1 / span 1;
     width: 100%;
     height: 14.5rem;
-    /* Para mantener su relación de aspecto mientras se
-    llena el cuadro de contenido completo del elemento */
     object-fit: cover;
 }
 .tarjetaLugar__titulo,
@@ -387,7 +385,7 @@ html {
 .tarjetaLugar__descripcion {
     height: 4rem;
 }
-.tarjetaLugar--primera {
+.tarjetaLugar__primera {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
 }
@@ -444,18 +442,16 @@ html {
 .paginas__enlaces {
     color: var(--rojo);
 }
-/* ! Zona 5 - Footer */
+/* ! Zona 5 - FOOTER */
 .piePagina {
     background-color: var(--azulOscuro);
 }
 .contenedorPie {
     margin: 0 auto;
     padding: 3rem 0;
-    width: 900px;
+    width: 70vw;
     display: grid;
-    /* min-width: 900px;
-    max-width: 1000px; */
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto 13.5rem 13.5rem 13.5rem 13.5rem auto;
     grid-template-rows: auto;
     grid-gap: 1rem;
 }
@@ -466,19 +462,19 @@ html {
     margin-bottom: 20px;
 }
 .columnaPie--primera {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-}
-.columnaPie--segunda {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
 }
-.columnaPie--tercera {
+.columnaPie--segunda {
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
 }
-.columnaPie--cuarta {
+.columnaPie--tercera {
     grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+}
+.columnaPie--cuarta {
+    grid-column: 5 / span 1;
     grid-row: 1 / span 1;
 }
 .columnaPie__titulo {
@@ -519,9 +515,18 @@ html {
     padding-bottom: 10px;
 }
 .columnaPie__enlace,
-.referencias__localizacion {
+.referencias__localizacion .columnaPie__enlace,
+.referencias__localizacionIcono,
+.referencias__icono1,
+.referencias__icono2,
+.referencias__icono3,
+.referencias__localizacionIcono1,
+.referencias__localizacionIcono2,
+.referencias__localizacionIcono3 {
     font: normal 0.7em fuentePequeña;
     color: var(--blanco);
+}
+.referencias__localizacion {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
 }
@@ -531,17 +536,80 @@ html {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
 }
-.referencias__elemento {
-    padding-bottom: 0.7rem;
+.referencias__lista {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 1rem;
+}
+.referencias__elemento1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
-    grid-gap: 0.5rem;
+    grid-gap: 1rem;
+    justify-content: start;
+}
+.referencias__elemento2 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+}
+.referencias__elemento3 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+}
+.referencias__icono1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+.referencias__localizacionIcono1 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+.referencias__enlacesUno {
+    grid-column: 1 / span 1;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    justify-content: start;
+}
+.referencias__icono2 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+.referencias__localizacionIcono2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+.referencias__enlacesDos {
+    grid-column: 1 / span 1;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    justify-content: start;
+}
+.referencias__icono3 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+.referencias__localizacionIcono3 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
 }
 .tarjetaLugar__enlaceBoton {
     font: normal 0.8rem fuenteNormal;
     color: var(--blanco);
 }
+/* ! BREAKPOINT MENÚ COLUMNA */
 @media screen and (max-width: 930px) {
     .menuHorizontal {
         flex-flow: column nowrap;
@@ -550,6 +618,7 @@ html {
         padding-bottom: 0.8rem;
     }
 }
+/* ! BREAKPOINT TABLETA GRANDE */
 @media screen and (max-width: 970px) {
     .zonaCentral {
         width: 600px;
@@ -561,7 +630,7 @@ html {
         grid-template-rows: auto auto auto auto;
         grid-gap: 0.8rem;
     }
-    .tarjetaLugar--primera {
+    .tarjetaLugar__primera {
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
     }
@@ -609,7 +678,8 @@ html {
         grid-row: 2 / span 1;
     }
 }
-@media screen and (max-width: 650px) {
+/* ! BREAKPOINT TABLETA PEQUEÑA */
+@media screen and (max-width: 750px) {
     .zonaCentral {
         width: 400px;
     }
@@ -620,7 +690,7 @@ html {
         grid-template-rows: auto auto auto auto auto auto;
         grid-gap: 0.8rem;
     }
-    .tarjetaLugar--primera {
+    .tarjetaLugar__primera {
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
     }
@@ -644,7 +714,6 @@ html {
         grid-column: 1 / span 1;
         grid-row: 6 / span 1;
     }
-    /* -------------------------- */
     .contenedorPie {
         width: 400px;
         display: grid;
@@ -669,7 +738,8 @@ html {
         grid-row: 2 / span 1;
     }
 }
-@media screen and (max-width: 430px) {
+/* ! BREAKPOINT TELÉFONO MÓVIL */
+@media screen and (max-width: 525px) {
     html {
         font-size: 18px;
     }
@@ -711,12 +781,16 @@ html {
         grid-template-rows: auto auto auto auto auto auto;
         grid-gap: 0.8rem;
     }
+    .zonaTitulo {
+        position: relative;
+        top: 3rem;
+    }
     .logo {
         position: relative;
         top: 1.5rem;
         font-size: 1rem;
     }
-    .tarjetaLugar--primera {
+    .tarjetaLugar__primera {
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
     }
@@ -796,8 +870,5 @@ html {
     }
     .abrirMenu {
         display: block;
-    }
-    .cerrarMenu {
-        display: none;
     }
 }
